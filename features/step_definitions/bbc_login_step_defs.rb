@@ -1,5 +1,6 @@
 Given("I access the bbc login page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @bbc_site = Bbc.new
+  @bbc_site.bbc_homepage.visit_homepage
 end
 
 Given("I input incorrect username details") do
